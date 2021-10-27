@@ -27,14 +27,14 @@ class Short extends React.Component{
        this.getQuestion();
    
    }
-// const againplay= () =>{
-//     this.getQuestion();
-// }
+const againplay= () =>{
+    this.getQuestion();
+}
 
-   againplay(){
-       this.getQuestion();
-       this.setState({response:0 , click:0 });
-   }
+//    againplay(){
+//        this.getQuestion();
+//        this.setState({response:0 , click:0 });
+//    }
 
    computeanswer(answer,correct_ans){
        if(answer === correct_ans){
