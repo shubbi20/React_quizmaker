@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 11px;
+}
+
+
+.container{
+    width: 70rem;
+    height: 46rem;
+    margin-left: 10rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(20% , 10%);
+    background-color: paleturquoise;
+}
+
+.title{
+    border: 0.2rem solid red;
+    border-radius: 0.5rem;
+    font-size: 3.2rem;
+    font-weight: 900;
+    padding-left: 1.2rem;
+    color: rgb(185, 177, 177);
+    background-color: rgb(31, 29, 29);
+}
