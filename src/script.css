@@ -11,19 +11,63 @@ html{
 .container{
     width: 70rem;
     height: 46rem;
-    margin-left: 10rem;
+    margin-left: 10rem; 
     top: 50%;
     left: 50%;
-    transform: translate(20% , 10%);
+    transform: translate(20% , 10%); 
     background-color: paleturquoise;
+    border-radius: 0.5rem;
 }
 
 .title{
-    border: 0.2rem solid red;
+    border: 0.2rem solid rgb(31, 30, 30);
     border-radius: 0.5rem;
     font-size: 3.2rem;
     font-weight: 900;
     padding-left: 1.2rem;
-    color: rgb(185, 177, 177);
-    background-color: rgb(31, 29, 29);
+    color: rgb(253, 253, 253);
+    background-color: #030e12;
+}
+.quizresult{
+    margin-top: 1.4rem;
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+
+#replay{
+   margin-top: 2rem;
+   margin-left: 0.5rem ;
+   font-size: 1.8rem;
+}
+
+@media only screen and (max-width:1024px) {
+    .container{
+     top: 50%;
+    left: 50%;
+    transform: translate(5%,10%);
+    }
+    html{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .container{
+        height:100%;
+        width:100%;
+        margin-left:0; 
+        top: 0;
+       left: 0;
+       transform:none; 
+    }
+    html{
+        font-size: 7px;
+    }
+    
+}
+@media only screen and (max-width:450px) {
+   
+    html{
+        font-size: 4.4px;
+    }
+    
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./comp.css";
+// import "script.css"
 
 export class Questionsec extends React.Component{
 
@@ -8,7 +9,7 @@ export class Questionsec extends React.Component{
   //push is not working because this.state is immutable so it can cause bugs, where as concat give us the new array;  
     let arr = this.props.res.incorrect_answers.concat(this.props.res.correct_answer); 
     arr=arr.sort(() => Math.random() - 0.5); 
-    this.state={statearr:arr,state_color:"yellow"};
+    this.state={statearr:arr,state_color:"#fcde67"};
           
      this.responseclick=this.responseclick.bind(this);   
  }   

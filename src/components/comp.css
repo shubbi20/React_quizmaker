@@ -4,23 +4,27 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 11px;
+}
+
 .quecontainer{
-    border: 0.1rem none palevioletred;
+
     padding: 0.5rem;
-    /* margin-top:4rem 0.1rem 0.1rem  0.1rem; */
-    /* margin: 0rem 0.1rem; */
     margin-top: 0.4rem;
     height: 8rem;
 }
 .quebox{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 800;
     font-family: 'Nanum Gothic', sans-serif;
 }
 .answerbox{
-    font-size: 1.2rem;
+
+    font-size: 1.4rem;
     font-weight: 700;
     margin-top: 0.3rem;
+    
 }
 .spanbox{
     margin-left: 1.7rem;
@@ -31,3 +35,4 @@
     background-color:burlywood;
     cursor: pointer;
 }
+

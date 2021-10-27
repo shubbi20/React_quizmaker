@@ -27,14 +27,12 @@ class Short extends React.Component{
        this.getQuestion();
    
    }
-const againplay= () =>{
-    this.getQuestion();
-}
 
-//    againplay(){
-//        this.getQuestion();
-//        this.setState({response:0 , click:0 });
-//    }
+
+   againplay(){
+       this.getQuestion();
+       this.setState({response:0 , click:0 });
+   }
 
    computeanswer(answer,correct_ans){
        if(answer === correct_ans){
@@ -50,16 +48,17 @@ const againplay= () =>{
         
         return (
                <div className="container">
+                   
                   <div className="title" >Quiz question</div>
 
-                  <div className="questionbox">
+                  <div>
                   {this.state.quebank?.length>0 && this.state.click<5 && this.state.quebank.map((x,index)=> <Questionsec key={index} selected={answer=>this.computeanswer(answer, this.state.quebank[index].correct_answer)} res={this.state.quebank[index]}/>)}
-                  { console.log(this.state.click)}
-                  {this.state.click===5 ? <Result score={this.state.response} playagain={this.againplay} /> : null }; 
+
+                  {this.state.click===5 ? <Result score={this.state.response} playagain={this.againplay.bind(this)}/> : null }
                   
                   </div>
                  
-                  
+                 
                </div> 
         )
     }
